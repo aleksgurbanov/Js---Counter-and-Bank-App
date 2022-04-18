@@ -5,19 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/bootstrap.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <!-- \\\\\ background uchun confirm funksiyasi -->
-    <input type="button" onclick="git()" value="click me">
+    <!-- \\\\\ kredit funksiyasi -->
+    <div class="credit">
+        <div class="container">
+            <div class="row">
+                <form action="">
+                    <input id="mebleg" type="text" placeholder="meblegi girin">
+                    <label for="kredit">Muddet:</label>
+
+                    <select name="kredit" id="credit">
+                        
+                      <option value="12">12</option>
+                      <option value="24">24</option>
+                      <option value="36">36</option>
+                      <option value="48">48</option>
+                    </select>
+                    <input type="number" id="faiz" placeholder="Faizi daxil edin">
+                    <button id="calculate" onclick="Faiz()">Kredit Al</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
 
 
+    <!-- counter -->
 
 
+    <div class="counter text-center">
+        <h1>counter</h1>
 
-    <script src="/assets/js/main.js"></script>
+        <div class="netice">
+            <p id="netice">1</p>
+
+        </div>
+        <input type=button onclick="topla()" id="btntopla" value="Incriase">
+        <input type=button onclick="azald()" id="btncix" value="Decrease">
+        <input type=button onclick="sifirla()" id="btnsifir" value="Reset">
+
+    </div>
+
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
